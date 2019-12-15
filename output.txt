@@ -1,0 +1,9 @@
+Precision: 0.4, Recall: 0.8, P@5: 0.5
+Precision: 0.4, Recall: 0.5333333333333333, P@5: 0.4166666666666667
+Precision: 0.35, Recall: 0.7, P@5: 0.4166666666666667
+Precision: 0.45, Recall: 0.9, P@5: 0.5555555555555556
+Precision: 0.35, Recall: 0.5833333333333334, P@5: 0.3333333333333333
+Precision: 0.5, Recall: 0.9090909090909091, P@5: 0.5555555555555556
+Precision: 0.4, Recall: 0.8, P@5: 0.5555555555555556
+Precision: 0.35, Recall: 0.5384615384615384, P@5: 0.5
+Precision: 0.5, Recall: 1.0, P@5: 0.4166666666666667
