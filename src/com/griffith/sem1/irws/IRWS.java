@@ -32,10 +32,14 @@ public class IRWS {
 		BufferedWriter writer = new BufferedWriter(new FileWriter("output.txt"));
 		for (String inp : data) {
 			String arr[] = inp.split(";");
-			int rCount = getRCount(arr[2]);
-			double precision = getPrecision(rCount, arr[2].length());
-			double recall = getRecall(rCount, Integer.parseInt(arr[3]));
-			double patFive = getPatFive(arr[2]);
+			int rel = Integer.parseInt(arr[3]);
+			int ret = arr[2].length();
+			int relret = getRCount(arr[2]);
+			double precision = (double) relret / (double) ret;
+			double recall = (double) relret/(double) rel;
+			double patFive = getPatNumber(arr[2], 5);
+			double patn = getPatNumber(arr[2], rel);
+			double averagePrecision = 
 			
 		    writer.write("Precision: " + precision + ", Recall: " + recall + ", P@5: " + patFive);
 		    writer.newLine();
@@ -54,20 +58,8 @@ public class IRWS {
 		return count;
 	}
 
-	private static double getPrecision(final int rCount, final int count) {
-		double precision = (double) rCount / (double) count;
 
-		// System.out.println("The precision is: " + precision);
-		return precision;
-	}
-
-	private static double getRecall(final int rCount, final int relavent) {
-		double recall = (double) rCount / (double) relavent;
-		// System.out.println("The recall is:" + recall);
-		return recall;
-	}
-
-	private static double getPatFive(final String str) {
+	private static double getPatNumber(final String str, final int num) {
 		StringBuffer sb = new StringBuffer();
 		int count = 0;
 		for (int i = 0; i < str.length(); i++) {
@@ -78,13 +70,30 @@ public class IRWS {
 			if (count > 0) {
 				sb.append(t);
 			}
-			if (count == 5) {
+			if (count == num) {
 				break;
 			}
 		}
-		double patFive = 5.0 / sb.length();
-		// System.out.println("P@5: " +patFive);
-		return patFive;
+		double patNum = (double) num / sb.length();
+		return patNum;
 
+	}
+	
+	private static double getAveragePrecision(final String str, final int rel) {
+		Object rList[] = getRs(str);
+		
+		
+		
+	}
+	
+	private static Object[] getRs(final String str) {
+		List<Integer> rList = new ArrayList<>();
+		
+		for(int i=0; i< str.length(); i++) {
+			if(str.charAt(i) == 'R') {
+				rList.add(i+1);
+			}
+		}
+		return rList.toArray();
 	}
 }
