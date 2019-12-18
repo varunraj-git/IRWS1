@@ -1,9 +1,8 @@
-A - Precision: 0.4, Recall: 0.8, P@5: 0.5, patr=0.5: 0.0, averageP: 0.04
-B - Precision: 0.4, Recall: 0.5333333333333333, P@5: 0.4166666666666667, patr=0.5: 0.4, averageP: 0.02807017543859649
-C - Precision: 0.35, Recall: 0.7, P@5: 0.4166666666666667, patr=0.5: 0.0, averageP: 0.034999999999999996
-A - Precision: 0.45, Recall: 0.9, P@5: 0.5555555555555556, patr=0.5: 0.0, averageP: 0.047368421052631574
-B - Precision: 0.35, Recall: 0.5833333333333334, P@5: 0.3333333333333333, patr=0.5: 0.35, averageP: 0.029166666666666664
-C - Precision: 0.5, Recall: 0.9090909090909091, P@5: 0.5555555555555556, patr=0.5: 0.0, averageP: 0.045454545454545456
-A - Precision: 0.4, Recall: 0.8, P@5: 0.5555555555555556, patr=0.5: 0.0, averageP: 0.04
-B - Precision: 0.35, Recall: 0.5384615384615384, P@5: 0.5, patr=0.5: 0.35, averageP: 0.02692307692307692
-C - Precision: 0.5, Recall: 1.0, P@5: 0.4166666666666667, patr=0.5: 0.0, averageP: 0.05263157894736842
+TOP THREE ENGINES:
+
+Top Engines 	 	 Average Precision
+======================================
+
+	A	 	 	 	 	 	0.44
+	C	 	 	 	 	 	0.35
+	B	 	 	 	 	 	0.26
