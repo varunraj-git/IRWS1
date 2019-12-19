@@ -12,7 +12,11 @@ import java.util.Map.Entry;
 
 public class ProcessSearchData {
 
-    public String processInputData(final List<String> data) {
+    /*
+     *  Inputs the list from the file
+     *  returns the processed data as String
+     * */
+	public String processInputData(final List<String> data) {
 
         /* key = engine# value = count */
         final Map<String, Integer> searchEngineCount = new HashMap<>();

@@ -10,7 +10,9 @@ public class IRWS {
 
         /* read input data */
         final List<String> inputData = fileOps.getInputData(args[0]);
+        /* process the search data from the file */
         final String outputDt = processData.processInputData(inputData);
+        /* prints to file */
         fileOps.printOutputData(outputDt);
     }
 }
