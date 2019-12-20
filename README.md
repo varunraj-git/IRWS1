@@ -19,6 +19,11 @@ Output:
 # Calculation
 The mean average precision (MAP) is taken after calculating average precisions of all input data for each search engine. The search engines that give top three MAP are selected and printed on an output file.
 
+# Running the appliation
+`javac -d . src\com\griffith\sem1\irws\IRWS.java`
+
+`java com.griffith.sem1.irws.IRWS <command line parameter>`
+
 
 
 
