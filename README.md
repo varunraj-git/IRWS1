@@ -24,11 +24,9 @@ The mean average precision (MAP) is taken after calculating average precisions o
 
 `java com.griffith.sem1.irws.IRWS <command line parameter>`
 
-
-
-
 # Run requirements
-| Plugin | README |
+| Property | Info |
 | ------ | ------ |
 | java | 1.8 or newer  |
 | Main File | com.griffith.sem1.irws.IRWS.java |
+|||
