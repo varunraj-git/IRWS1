@@ -1,8 +1,0 @@
-TOP THREE ENGINES:
-
-Top Engines 	 	 Average Precision
-======================================
-
-	A	 	 	 	 	 	0.44
-	C	 	 	 	 	 	0.35
-	B	 	 	 	 	 	0.26
